@@ -3,7 +3,7 @@
 В рамках выполнения данной лабораторной работы мною были выполнены все команды из tutorial:
 1) Скопирован репозиторий из lab02:
 ```bash
-git clone https://github.com/${GITHUB_USERNAME}/lab02.git projects/lab03
+$ git clone https://github.com/${GITHUB_USERNAME}/lab02.git projects/lab03
 Клонирование в «projects/lab03»...
 remote: Enumerating objects: 19, done.
 remote: Counting objects: 100% (19/19), done.
@@ -73,7 +73,7 @@ target_link_libraries(example2 print)
 ```
 4) Произведена автоматическая сборка проекта и протестированы функции файлов examples:
 ```bash
-cmake --build _build
+$ cmake --build _build
 CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
   Compatibility with CMake < 3.10 will be removed from a future version of
   CMake.
@@ -157,7 +157,7 @@ $ cat > hello_world_application/CMakeLists.txt << 'EOF'
 > add_executable(hello_world hello_world.cpp)
 target_link_libraries(hello_world formatter_ex)
 EOF
-3$ cat > solver_application/solver.cpp << 'EOF
+$ cat > solver_application/solver.cpp << 'EOF
 >  #include <iostream>
 
 #include "formatter_ex.h"
